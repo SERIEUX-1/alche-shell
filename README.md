@@ -1,2 +1,8 @@
-We will find the script that will shows the current working directory.
-Specifically it will show the absolute path to our current working directory.
+# alche-shell
+
+Beginner-level shell scripting exercises covering navigation and file
+manipulation basics in Bash: cd, ls, pwd, cp, mv, rm, mkdir, ln, wildcards.
+
+## Directories
+
+* basics/ - Shell basics: navigation, file manipulation, links, wildcards.
