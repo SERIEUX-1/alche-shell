@@ -30,5 +30,22 @@ loops, conditions, parsing.
 | `13-lets_parse_apache_logs` | Extracts visitor IP and HTTP status code from `apache-access.log` using `awk`. |
 | `14-dig_the-data` | Groups Apache log entries by IP and status code, sorted by occurrence count. |
 | `apache-access.log` | Sample Apache access log used by scripts 13 and 14. |
+## Directory: processes_and_signals
+
+| File | Description |
+| --- | --- |
+| `0-what-is-my-pid` | Displays the script's own process ID (PID). |
+| `1-list_your_processes` | Displays all running processes, for all users, in a hierarchical, user-oriented format. |
+| `2-show_your_bash_pid` | Displays process list lines containing "bash" to find the Bash PID. |
+| `3-show_your_bash_pid_made_easy` | Displays PID and name of processes containing "bash", without using `ps`. |
+| `4-to_infinity_and_beyond` | Displays "To infinity and beyond" indefinitely, pausing 2 seconds between iterations. |
+| `5-dont_stop_me_now` | Stops the `4-to_infinity_and_beyond` process using `kill`. |
+| `6-stop_me_if_you_can` | Stops the `4-to_infinity_and_beyond` process without using `kill` or `killall`. |
+| `7-highlander` | Displays "To infinity and beyond" indefinitely, printing "I am invincible!!!" on SIGTERM instead of stopping. |
+| `67-stop_me_if_you_can` | Stops the `7-highlander` process without using `kill` or `killall`. |
+| `8-beheaded_process` | Kills the `7-highlander` process despite its SIGTERM trap. |
+| `10-process_and_pid_file` | Writes its PID to `/var/run/myscript.pid`, loops indefinitely, and handles SIGTERM, SIGINT, and SIGQUIT differently. |
+| `manage_my_process` | Daemon script that indefinitely writes "I am alive!" to `/tmp/my_process` every 2 seconds. |
+| `11-manage_my_process` | Init-style script that starts, stops, or restarts `manage_my_process`, managing its PID file. |
 ## Author
 SERIEUX Elias
