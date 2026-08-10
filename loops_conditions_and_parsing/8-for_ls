@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script lists non-hidden directory contents, name after first dash
+for f in *; do
+	echo "${f#*-}"
+done
